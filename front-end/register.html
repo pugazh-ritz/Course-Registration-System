@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+                background-color: black;
+                text-align: center; 
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white; 
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #104212; 
+            }
+            h1 {
+                color: white; 
+            }
+        
+        </style>
+
+</head>
+<body>
+    <h1 >Register for a Course</h1>
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text"  name="name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email"  name="email" required>
+        <br>
+        <br>
+        <label for="courseName">Course Name</label><br>
+        <select name="courseName" required>
+            <option value="Course 1">java</option>
+            <option value="Course 2">spring</option>
+            <option value="Course 3">angular</option>
+        </select><br>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
